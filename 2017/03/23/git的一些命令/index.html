@@ -362,24 +362,7 @@
   <section class="youyan" id="comments" >
 	  <!-- UY BEGIN -->
 	  <div id="uyan_frame"></div>
-	  <script src="//cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
-	  <script>
-         $(function(){
-			  $.ajax({
-			    async: false,
-			    type: "GET",
-			    dataType: 'jsonp',
-			    jsonp: 'callback',
-			    jsonpCallback: 'callbackfunction',
-			    url: "http://v2.uyan.cc/code/uyan.js",
-			    data: {'uid':'2128099'},
-			    contentType: "application/json;utf-8",
-			    success: function(msg) {
-			      console.log(msg);
-			    }
-			  });
-			});
-	  </script>
+	  <script type="text/javascript" src="//v2.uyan.cc/code/uyan.js?uid=2128099"></script>
 	  <!-- UY END -->
 </section>
 
@@ -510,11 +493,11 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">vagrant</a>
+                <a href="javascript:void(0)" class="js-tag color1">Redis</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Redis</a>
+                <a href="javascript:void(0)" class="js-tag color3">vagrant</a>
               </li>
              
               <li class="article-tag-list-item">
