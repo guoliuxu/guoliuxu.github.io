@@ -343,7 +343,25 @@
   <section class="youyan" id="comments" >
 	  <!-- UY BEGIN -->
 	  <div id="uyan_frame"></div>
-	  <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2128099"></script>
+	  <script src="//cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+	  <script>
+         $(function(){
+			  $.ajax({
+			    async: false,
+			    type: "GET",
+			    dataType: 'jsonp',
+			    jsonp: 'callback',
+			    jsonpCallback: 'callbackfunction',
+			    url: "http://v2.uyan.cc/code/uyan.js?uid=2128099",
+			    data: "",
+			    timeout: 3000,
+			    contentType: "application/json;utf-8",
+			    success: function(msg) {
+			      console.log(msg);
+			    }
+			  });
+			})
+	  </script>
 	  <!-- UY END -->
 </section>
 
