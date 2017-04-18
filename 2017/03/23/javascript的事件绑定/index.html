@@ -179,6 +179,12 @@
         
       </header>
     
+    <div class="clearfloat">
+      <span id="busuanzi_container_page_pv" style="color: #999;margin-right: 7.6923%;float: right;">
+         本文总阅读量<span id="busuanzi_value_page_pv">0</span>次
+      </span>
+      <span style="clear:both;"></span>
+    </div>
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="javascript-事件的冒泡-IE浏览器支持"><a href="#javascript-事件的冒泡-IE浏览器支持" class="headerlink" title="javascript 事件的冒泡 (IE浏览器支持)"></a>javascript 事件的冒泡 (IE浏览器支持)</h2><p>一.在一个对象上触发某类事件（比如单击onclick事件），如果此对象定义了此事件的处理程序，那么此事件就会调用这个处理程序，如果没有定义此事件处理程序或者事件返回true，那么这个事件会向这个对象的父级对象传播，从里到外，直至它被处理（父级对象所有同类事件都将被激活），或者它到达了对象层次的最顶层，即document对象（有些浏览器是window）</p>
@@ -384,7 +390,10 @@
 
 
 
-
+<style>
+    .clearfloat:after{display:block;clear:both;content:"";visibility:hidden;height:0} 
+    .clearfloat{zoom:1} 
+</style>
           </div>
         </div>
       </div>
